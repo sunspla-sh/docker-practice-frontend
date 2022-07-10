@@ -7,3 +7,6 @@ services:
 
 before_install:
   - docker build -t sunsplash/docker-demo-frontend -f Dockerfile.dev .
+
+script:
+  - docker run sunsplash/docker-demo-frontend npm run ci:test
