@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest --watchAll --verbose=true"
+    "test": "jest --watchAll --verbose=true",
+    "ci:test": "CI=true jest"
   },
   "dependencies": {
     "react": "^18.0.0",
