@@ -16,7 +16,7 @@ function App() {
           </button>
         </p>
         <p>
-          Edit <code>App.jsx</code> and save to test HMR updates!
+          I was changed on the feature branch...
         </p>
         <p>
           <a
