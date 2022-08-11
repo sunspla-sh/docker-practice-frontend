@@ -16,4 +16,10 @@ RUN npm run build
 
 FROM nginx
 
+#AWS elastic beanstalk will use this to expose port 80 if we don't have a docker-compose.yml file.
+#In our case we already exposed port 80 with our docker-compose.yml file, which we created because
+#amazon switched to the Amazon Linux 2 Platform for AWS EBS which looks for a docker-compose.yml
+#and uses it to build the single container app.
+EXPOSE 80
+
 COPY --from=builder /usr/app/dist /usr/share/nginx/html
